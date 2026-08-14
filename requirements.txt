@@ -1,0 +1,4 @@
+# No runtime dependencies — numtheory uses only the Python standard library.
+# pytest is optional, only needed if you want to run tests via `pytest` instead
+# of running the test files directly with `python tests/test_x.py`.
+pytest>=7.0
