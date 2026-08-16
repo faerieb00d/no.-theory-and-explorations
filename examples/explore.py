@@ -1,10 +1,6 @@
-"""
-explore.py
-----------
-A runnable tour through the numtheory package. Run this directly:
 
-    python examples/explore.py
-"""
+#explore.py
+
 
 import sys
 import os
