@@ -1,7 +1,5 @@
 """
 gcd_lcm.py
-----------
-Greatest common divisor, least common multiple, and the extended
 Euclidean algorithm (which also gives Bezout coefficients).
 """
 
@@ -10,11 +8,9 @@ from typing import Tuple
 
 
 def gcd(a: int, b: int) -> int:
-    """
-    Euclidean algorithm for the greatest common divisor.
-
-    gcd(a, b) = gcd(b, a mod b), with gcd(a, 0) = a.
-    """
+    
+    #Euclidean algorithm for the greatest common divisor. gcd(a, b) = gcd(b, a mod b), with gcd(a, 0) = a.
+  
     a, b = abs(a), abs(b)
     while b:
         a, b = b, a % b
@@ -34,11 +30,8 @@ def lcm(a: int, b: int) -> int:
 def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
     """
     Extended Euclidean algorithm.
-
     Returns (g, x, y) such that:  a*x + b*y = g = gcd(a, b)
 
-    These x, y are the Bezout coefficients. This is the foundation for
-    computing modular inverses and solving linear Diophantine equations.
     """
     old_r, r = a, b
     old_s, s = 1, 0
