@@ -39,7 +39,8 @@ number-theory-explorations/
 ├── requirements.txt
 └── LICENSE
 ```
-
+## Tests
+![All tests passed] (project passed.png)
 ## Getting started
 
 No external dependencies are required — everything uses the Python
