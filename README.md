@@ -22,7 +22,7 @@ not just imported as a black box.
 
 ```
 number-theory-explorations/
-├── numtheory/                  # the library
+├── numtheory/                  
 │   ├── __init__.py
 │   ├── primes.py
 │   ├── gcd_lcm.py
@@ -31,7 +31,7 @@ number-theory-explorations/
 │   ├── continued_fractions.py
 │   └── perfect_numbers.py
 ├── examples/
-│   └── explore.py              # runnable tour of every module
+│   └── explore.py             
 ├── tests/
 │   ├── test_primes.py
 │   └── test_modular.py
