@@ -40,7 +40,7 @@ number-theory-explorations/
 └── LICENSE
 ```
 ## Tests
-![All tests passed] (project passed.png)
+![All tests passing](project-passed.png)
 ## Getting started
 
 No external dependencies are required — everything uses the Python
