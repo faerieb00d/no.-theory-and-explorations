@@ -1,13 +1,8 @@
 """
-numtheory
-=========
-
 A small, dependency-free Python package for exploring classic number theory:
 primes, GCD/LCM, modular arithmetic, Diophantine equations, continued
 fractions, and figurate/perfect numbers.
 
-Everything is written for readability first, so you can read the source
-and see the math, not just call a black-box function.
 """
 
 from .primes import (
