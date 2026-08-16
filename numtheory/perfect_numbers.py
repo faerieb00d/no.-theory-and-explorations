@@ -1,9 +1,5 @@
-"""
-perfect_numbers.py
--------------------
-Divisor sums, perfect/abundant/deficient number classification, and
-aliquot sequences.
-"""
+
+#perfect_numbers.py
 
 from __future__ import annotations
 from typing import List
@@ -11,12 +7,8 @@ from typing import List
 
 def divisor_sum(n: int, proper: bool = True) -> int:
     """
-    Sum of the divisors of n.
-
     If proper=True (default), sums divisors excluding n itself
     (this is the "aliquot sum"). If proper=False, includes n.
-
-    Runs in O(sqrt(n)) by pairing divisors d and n/d.
     """
     if n < 1:
         raise ValueError("n must be a positive integer")
@@ -60,11 +52,10 @@ def aliquot_sequence(n: int, max_steps: int = 20) -> List[int]:
     Generate the aliquot sequence starting at n: repeatedly replace the
     current number with the sum of its proper divisors.
 
-    Stops early if it reaches 0 (sequence terminates) or a perfect
-    number (fixed point), or after max_steps iterations. Many aliquot
-    sequences are unsolved problems in number theory (e.g. whether the
-    sequence starting at 276 ever terminates), so max_steps guards
-    against runaway loops.
+    Stops early if it reaches 0 sequence terminates 
+    or a perfect
+    number- fixed point, or after max_steps iterations. Many aliquot
+    sequences are unsolved problems in number theory (
     """
     sequence = [n]
     current = n
