@@ -1,6 +1,6 @@
+
+#continued_fractions.py
 """
-continued_fractions.py
------------------------
 Convert rationals to/from their continued fraction representation.
 
 A continued fraction [a0; a1, a2, ..., an] represents:
@@ -32,10 +32,7 @@ def to_continued_fraction(numerator: int, denominator: int) -> List[int]:
 
 
 def from_continued_fraction(terms: List[int]) -> Fraction:
-    """
-    Reconstruct the exact rational value of a continued fraction
-    [a0, a1, ..., an], working from the back (bottom of the fraction) up.
-    """
+    
     if not terms:
         raise ValueError("terms must be non-empty")
 
