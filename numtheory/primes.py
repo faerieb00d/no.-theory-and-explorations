@@ -1,8 +1,6 @@
-"""
-primes.py
----------
-Primality testing, prime generation, and prime factorization.
-"""
+
+#primes.py
+
 
 from __future__ import annotations
 from typing import List, Dict
@@ -11,11 +9,6 @@ from typing import List, Dict
 def is_prime(n: int) -> bool:
     """
     Trial-division primality test with 6k +/- 1 optimization.
-
-    Every prime > 3 is of the form 6k - 1 or 6k + 1, so after
-    checking 2 and 3 we only need to test candidates of that form.
-
-    Time complexity: O(sqrt(n))
     """
     if n < 2:
         return False
@@ -56,11 +49,7 @@ def sieve_of_eratosthenes(limit: int) -> List[int]:
 
 
 def prime_factors(n: int) -> Dict[int, int]:
-    """
-    Return the prime factorization of n as {prime: exponent}.
-
-    Example: prime_factors(360) -> {2: 3, 3: 2, 5: 1}   (360 = 2^3 * 3^2 * 5)
-    """
+   
     if n < 1:
         raise ValueError("prime_factors is defined for positive integers only")
 
@@ -89,11 +78,7 @@ def next_prime(n: int) -> int:
 
 
 def nth_prime(n: int) -> int:
-    """
-    Return the n-th prime number (1-indexed), i.e. nth_prime(1) == 2.
-
-    Uses a growing sieve so it stays reasonably fast for moderate n.
-    """
+   
     if n < 1:
         raise ValueError("n must be >= 1")
 
