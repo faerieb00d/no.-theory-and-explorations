@@ -31,7 +31,6 @@ def extended_gcd(a: int, b: int) -> Tuple[int, int, int]:
     """
     Extended Euclidean algorithm.
     Returns (g, x, y) such that:  a*x + b*y = g = gcd(a, b)
-
     """
     old_r, r = a, b
     old_s, s = 1, 0
